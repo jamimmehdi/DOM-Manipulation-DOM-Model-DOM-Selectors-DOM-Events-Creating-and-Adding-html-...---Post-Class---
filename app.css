@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
-
-
-
 .d-none{
     display: none;
 }
@@ -16,3 +11,69 @@
     visibility: hidden;
 }
 
+nav, ul {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    padding: 12px 16px;
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    width: 40%;
+}
+
+ul {
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+    cursor: pointer;
+}
+
+#booker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#booker-grid-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.grid-cell {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.booking-grid {
+    width: fit-content;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.unavailable-seat{
+    background-color: lightcoral;
+}
+
+.available-seat{
+    cursor: pointer;
+    background-color: green;
+}
+
+.selected-seat {
+    border:4px outset rgb(0, 0, 0);
+}
