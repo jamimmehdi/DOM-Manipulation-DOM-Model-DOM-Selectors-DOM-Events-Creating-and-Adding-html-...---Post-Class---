@@ -67,7 +67,7 @@ const renderMovieList = (list) => {
         a.style.height = '200px'
         a.style.width = '200px'
         a.innerHTML = `
-        <div class="movie" data-id=${movie.name}>
+        <div class="movie" data-id='${movie.name}'>
         <div class="movie-img-wrapper" style="background-image: url('${movie.imgUrl}'); background-repeat: no-repeat;background-size: contain; height: 200px; width: 150px;"> </div> 
         <h4>${movie.name}</h4> </div>
         `
