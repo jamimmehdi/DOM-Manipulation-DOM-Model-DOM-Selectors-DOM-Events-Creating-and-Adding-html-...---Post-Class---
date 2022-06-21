@@ -24,7 +24,6 @@ function success() {
             <p>Phone Number: ${phone}</p>
             <p>Email: ${email}</p>
         `
-
         booker.appendChild(div);
     })
 }
@@ -64,11 +63,11 @@ const renderMovieList = (list) => {
     list.map((movie) => {
         let a = document.createElement('a');
         a.classList.add('movie-link');
-        a.setAttribute('href', '#');
+        // a.setAttribute('href', `/${movie.name}`);
         a.style.height = '200px'
         a.style.width = '200px'
         a.innerHTML = `
-        <div class="movie" data-id="moviename">
+        <div class="movie" data-id=${movie.name}>
         <div class="movie-img-wrapper" style="background-image: url('${movie.imgUrl}'); background-repeat: no-repeat;background-size: contain; height: 200px; width: 150px;"> </div> 
         <h4>${movie.name}</h4> </div>
         `
