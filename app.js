@@ -47,13 +47,13 @@ const removeLoader = () => {
 
 // Add Movie Holder
 const movieHolder = () => {
-    let body = document.querySelector('body');
+    let main = document.querySelector('main');
     let movieHolder = document.createElement('div');
     movieHolder.classList.add('movie-holder');
     movieHolder.style.display = 'flex';
     movieHolder.style.padding = '2rem  2rem';
     movieHolder.style.justifyContent = 'center';
-    body.insertBefore(movieHolder, body.children[1]);
+    main.appendChild(movieHolder);
 }
 
 // Render Movie list
@@ -63,7 +63,7 @@ const renderMovieList = (list) => {
     list.map((movie) => {
         let a = document.createElement('a');
         a.classList.add('movie-link');
-        // a.setAttribute('href', `/${movie.name}`);
+        a.setAttribute('href', '#');
         a.style.height = '200px'
         a.style.width = '200px'
         a.innerHTML = `
