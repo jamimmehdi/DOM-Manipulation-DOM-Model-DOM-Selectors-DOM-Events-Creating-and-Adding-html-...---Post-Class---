@@ -32,12 +32,12 @@ function success() {
 
 // Insert Loader
 const insertLoader = () => {
-    let body = document.querySelector('body');
+    let main = document.querySelector('main');
     let loader = document.createElement('p');
     loader.setAttribute('id', 'loader');
     loader.innerText = 'Loading...';
 
-    body.insertBefore(loader, body.children[1]);
+    main.appendChild(loader);
 }
 
 // Remove Loader
