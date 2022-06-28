@@ -14,25 +14,28 @@
 ul {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+    cursor: pointer;
 }
 
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 12px 16px;
     background-color: black;
     color: white;
 }
 
-.logo {
-    width: 40%;
+a:link, a:visited, a:active {
+    color: white;
+    text-decoration: none;
 }
 
-ul {
-    justify-content: space-evenly;
-    width: 100%;
-    list-style: none;
-    cursor: pointer;
+.logo {
+    width: 40%;
 }
 
 #booker {
