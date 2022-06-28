@@ -33,7 +33,7 @@ function success() {
 // Insert Loader
 const insertLoader = () => {
     let main = document.querySelector('main');
-    let loader = document.createElement('p');
+    let loader = document.createElement('div');
     loader.setAttribute('id', 'loader');
     loader.innerText = 'Loading. ';
 
