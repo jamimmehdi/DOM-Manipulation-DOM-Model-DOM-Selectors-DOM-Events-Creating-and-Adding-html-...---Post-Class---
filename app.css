@@ -11,14 +11,7 @@
     visibility: hidden;
 }
 
-ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    list-style: none;
-    cursor: pointer;
-}
+
 
 nav {
     display: flex;
@@ -36,6 +29,15 @@ a:link, a:visited, a:active {
 
 .logo {
     width: 40%;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+    cursor: pointer;
 }
 
 #booker {
