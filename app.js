@@ -203,9 +203,6 @@ const addListener = () => {
 
 
 const getMovieList = async () => {
-    // Insert Loader
-    insertLoader()
-
     await fetchMovieList()
         .then(response => {
             // Remove Loader
@@ -225,3 +222,8 @@ const getMovieList = async () => {
 }
 
 getMovieList();
+
+window.onload = function () {
+     // Insert Loader
+     insertLoader()
+}
