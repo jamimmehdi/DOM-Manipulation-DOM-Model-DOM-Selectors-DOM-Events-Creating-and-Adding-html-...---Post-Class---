@@ -35,7 +35,7 @@ const insertLoader = () => {
     let main = document.querySelector('main');
     let loader = document.createElement('p');
     loader.setAttribute('id', 'loader');
-    loader.innerText = 'Loading...';
+    loader.innerText = 'Loading. ';
 
     main.appendChild(loader);
 }
